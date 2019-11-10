@@ -58,4 +58,27 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 Now stage the newly added file README.md
 
+mbp-de-thierry:Local-First thierry-inno21$ git add README.md 
+mbp-de-thierry:Local-First thierry-inno21$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   README.md
+
+On voit bien le nouveau fichier
+
+mbp-de-thierry:Local-First thierry-inno21$ git commit -m "now second commit to treat well mister README.md"
+[master 0b60728] now second commit to treat well mister README.md
+ 1 file changed, 61 insertions(+)
+ create mode 100644 README.md
+
+ puis un nouveau cliqué sur save dan Subliem donne cela
+ mbp-de-thierry:Local-First thierry-inno21$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
 
