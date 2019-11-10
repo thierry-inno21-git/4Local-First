@@ -172,3 +172,5 @@ nothing to commit, working tree clean
 mbp-de-thierry:Local-First thierry-inno21$ git status
 On branch chapitre2README
 nothing to commit, working tree clean
+
+just adding m five cents
