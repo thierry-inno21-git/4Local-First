@@ -82,3 +82,48 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
+
+mbp-de-thierry:Local-First thierry-inno21$ git commit -a -m"troisième commit pour prendre en compte les dernieres saisies"
+[master f8cf038] troisième commit pour prendre en compte les dernieres saisies
+ 1 file changed, 23 insertions(+)
+
+
+ pour l'instant il n'y a que le master
+ mbp-de-thierry:Local-First thierry-inno21$ git branch
+* master
+Créons une branche à partir d'ici
+
+mbp-de-thierry:Local-First thierry-inno21$ git checkout -b chapitre2README
+Switched to a new branch 'chapitre2README'
+
+mbp-de-thierry:Local-First thierry-inno21$ git status
+On branch chapitre2README
+nothing to commit, working tree clean
+mbp-de-thierry:Local-First thierry-inno21$ git status
+On branch chapitre2README
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+mbp-de-thierry:Local-First thierry-inno21$ git branch
+* chapitre2README
+  master
+
+On continue de suivre le tuto de https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
+
+mbp-de-thierry:Local-First thierry-inno21$ git branch master
+fatal: A branch named 'master' already exists.
+mbp-de-thierry:Local-First thierry-inno21$ git checkout master
+M	README.md
+Switched to branch 'master'
+mbp-de-thierry:Local-First thierry-inno21$ git branch
+  chapitre2README
+* master
+
+on passe d'une branche à l'autre facilement
+
+
