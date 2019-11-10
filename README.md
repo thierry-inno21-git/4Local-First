@@ -127,3 +127,19 @@ mbp-de-thierry:Local-First thierry-inno21$ git branch
 on passe d'une branche à l'autre facilement
 
 
+maintenant on crée un repo distant puis on le charge avec le contenu local
+
+mbp-de-thierry:Local-First thierry-inno21$ git remote add origin https://github.com/thierry-inno21-git/4Local-First.git
+mbp-de-thierry:Local-First thierry-inno21$ git push -u origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 2.09 KiB | 2.09 MiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/thierry-inno21-git/4Local-First.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+
