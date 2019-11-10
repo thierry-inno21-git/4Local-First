@@ -72,7 +72,7 @@ mbp-de-thierry:Local-First thierry-inno21$ git commit -m "now second commit to t
  1 file changed, 61 insertions(+)
  create mode 100644 README.md
 
- puis un nouveau cliqué sur save dan Subliem donne cela
+ puis un nouveau cliqué sur save dan Sublime donne cela
  mbp-de-thierry:Local-First thierry-inno21$ git status
 On branch master
 Changes not staged for commit:
@@ -82,3 +82,95 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
+mbp-de-thierry:Local-First thierry-inno21$ git commit -a
+Aborting commit due to empty commit message.
+mbp-de-thierry:Local-First thierry-inno21$ git commit -a -m"troisième commit pour prendre en compte les dernieres saisies"
+[master f8cf038] troisième commit pour prendre en compte les dernieres saisies
+ 1 file changed, 23 insertions(+)
+mbp-de-thierry:Local-First thierry-inno21$ git branch
+* master
+mbp-de-thierry:Local-First thierry-inno21$ git checkout -b chapitre2README
+Switched to a new branch 'chapitre2README'
+mbp-de-thierry:Local-First thierry-inno21$ git status
+On branch chapitre2README
+nothing to commit, working tree clean
+mbp-de-thierry:Local-First thierry-inno21$ git status
+On branch chapitre2README
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+mbp-de-thierry:Local-First thierry-inno21$ git branch
+* chapitre2README
+  master
+mbp-de-thierry:Local-First thierry-inno21$ git branch master
+fatal: A branch named 'master' already exists.
+mbp-de-thierry:Local-First thierry-inno21$ git checkout master
+M	README.md
+Switched to branch 'master'
+mbp-de-thierry:Local-First thierry-inno21$ git branch
+  chapitre2README
+* master
+mbp-de-thierry:Local-First thierry-inno21$ git remote add origin https://github.com/thierry-inno21-git/4Local-First.git
+mbp-de-thierry:Local-First thierry-inno21$ git push -u origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 2.09 KiB | 2.09 MiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/thierry-inno21-git/4Local-First.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+mbp-de-thierry:Local-First thierry-inno21$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+mbp-de-thierry:Local-First thierry-inno21$ git commit -a -m "on a maintenant une version du master en remote" 
+[master 58779b2] on a maintenant une version du master en remote
+ 1 file changed, 45 insertions(+)
+mbp-de-thierry:Local-First thierry-inno21$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+mbp-de-thierry:Local-First thierry-inno21$ git branch
+  chapitre2README
+* master
+mbp-de-thierry:Local-First thierry-inno21$ git push origin chapitre2README
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'chapitre2README' on GitHub by visiting:
+remote:      https://github.com/thierry-inno21-git/4Local-First/pull/new/chapitre2README
+remote: 
+To https://github.com/thierry-inno21-git/4Local-First.git
+ * [new branch]      chapitre2README -> chapitre2README
+mbp-de-thierry:Local-First thierry-inno21$ git commit -a -m "on ajoute le chapitre suivant post creation branche dans github"
+[master b30d980] on ajoute le chapitre suivant post creation branche dans github
+ 1 file changed, 16 insertions(+)
+mbp-de-thierry:Local-First thierry-inno21$ git branch
+  chapitre2README
+* master
+mbp-de-thierry:Local-First thierry-inno21$ git checkout chapitre2README
+Switched to branch 'chapitre2README'
+mbp-de-thierry:Local-First thierry-inno21$ git branch
+* chapitre2README
+  master
+mbp-de-thierry:Local-First thierry-inno21$ git status
+On branch chapitre2README
+nothing to commit, working tree clean
+mbp-de-thierry:Local-First thierry-inno21$ git status
+On branch chapitre2README
+nothing to commit, working tree clean
+
+just adding m five cents
