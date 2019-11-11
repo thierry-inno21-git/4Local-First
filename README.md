@@ -1,20 +1,22 @@
-Test de la création d'un repopsitory local
+#Test de la création d'un repository local
 
-Création d'un repository git
+Création d'un **repository** git
+
 git init Local-First
 
-Ajout avec Sublime Text d'un fichier source JavaScript app.js
+Ajout avec *Sublime Text* d'un fichier source JavaScript app.js
 
-utilisation du tuto du site https://rogerdudler.github.io/git-guide/index.fr.html
+Utilisation du tuto du site https://rogerdudler.github.io/git-guide/index.fr.html
 
-après la création du repository il faut y ajouter des fichier via git (sinon git ne voit pas les fichiers qui sont ajouté dans le dossier qu'il surveille)
+Après la création du repository, il faut y ajouter des fichiers via git (sinon git ne voit pas les fichiers qui sont ajouté dans le dossier qu'il surveille)
 
 mbp-de-thierry:Local-First thierry-inno21$ ls
 app.js
 
 git add *
-
+```
 mbp-de-thierry:Local-First thierry-inno21$ git commit -m "OK pour valider cette premiere verson de app.js"
+
 [master (root-commit) c59a3dc] OK pour valider cette premiere verson de app.js
  1 file changed, 14 insertions(+)
  create mode 100644 app.js
@@ -43,7 +45,7 @@ index 0000000..3161f41
 +  res.end('Hello World\n');
 +});
 +
-
+```
 
 mbp-de-thierry:Local-First thierry-inno21$ git status
 On branch master
